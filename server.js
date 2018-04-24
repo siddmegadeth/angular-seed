@@ -1,0 +1,6 @@
+(function()
+	{
+
+		require("./server/app");
+
+	})();
