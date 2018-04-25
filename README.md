@@ -18,3 +18,4 @@ realtime garbage detection and marking.
 - type :
 - http://localhost:3001 for Desktop View Or
 - http://localhost:3001/mobile for Mobile App Simulation in Browser
+- Adding support for JEST Unit testing Framework with Angular(In Progress)
