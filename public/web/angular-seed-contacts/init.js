@@ -4,7 +4,6 @@
         "ngAnimate",
         "ui.bootstrap",
         "ngAside",
-        "socialLogin",
         "satellizer"
     ];
 
@@ -13,8 +12,8 @@
     win.enable(true);
     win.info();
 
-    app.config(['$routeProvider', '$httpProvider', 'socialProvider', '$authProvider',
-        function($routeProvider, $httpProvider, socialProvider, $authProvider) {
+    app.config(['$routeProvider', '$httpProvider', '$authProvider',
+        function($routeProvider, $httpProvider, $authProvider) {
 
             //socialProvider.setGoogleKey("641528930658-9l2jlgsnvk30toci6tac2slron4i0po7.apps.googleusercontent.com");
             // socialProvider.setLinkedInKey("YOUR LINKEDIN CLIENT ID");

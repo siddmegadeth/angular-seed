@@ -1,5 +1,5 @@
-app.controller('globalCtrl', ['$scope', '$rootScope', '$location', '$uibModal', 'socialLoginService', '$auth',
-    function($scope, $rootScope, $location, $uibModal, socialLoginService, $auth) {
+app.controller('globalCtrl', ['$scope', '$rootScope', '$location', '$uibModal', '$auth',
+    function($scope, $rootScope, $location, $uibModal, $auth) {
 
         $rootScope.isActive = function(loc) {
 
@@ -31,7 +31,6 @@ app.controller('globalCtrl', ['$scope', '$rootScope', '$location', '$uibModal', 
         };
 
         $rootScope.logout = function() {
-            socialLoginService.logout();
         }
 
 
