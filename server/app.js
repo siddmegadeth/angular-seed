@@ -8,7 +8,7 @@
 		
 		http.createServer(app).listen(app.get("PORT"),function(req,resp)
 		{
-			log("Garbage Spot Server Started "+app.get("PORT"));
+			log("Contact Server Started "+app.get("PORT"));
 			
 		});
 		 //Run Server

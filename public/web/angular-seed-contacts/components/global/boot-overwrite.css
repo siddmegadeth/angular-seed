@@ -16,5 +16,9 @@ a:hover {
     text-decoration: none !important;
 }
 
+nav.navbar.navbar-inverse
+{
+	border-radius: 1px !important;
+}
 
 /*Overwrrite Bootstrap Collpase*/

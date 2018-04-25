@@ -1,15 +1,80 @@
 <div class="container-fluid">
     <div class="row">
-         <div class="col-sm-3 col-md-3 col-lg-3" ng-repeat="c in cards">
-                <div class="card cards-box">
-                <img class="card-img-top img-thumbnail" src="http://bootstrap-ecommerce.com/main/images/posts/post3.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{c.text}}</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="col-lg-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search Contacts" ng-model="userSearch">
                 </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-md-6 col-lg-3" ng-repeat="c in cards | filter:userSearch" style="margin-bottom:3%;">
+            <div class="card " style="padding-left: 8%;padding-bottom: 7%;padding-top:4%;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);text-decoration:none;">
+                <a href ng-click="showDetails(c)">
+                    <p>
+                        <img src="assets/img_avatar.png" alt="Avatar" class="img-circle image-box" style="width:50%">
+                    </p>
+                    <span>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    &nbsp;<span class="text-primary">{{c.address.city}}</span>
+                    <br/>
+                    </span>
+                    <span>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    &nbsp;<span class="text-muted"><a href>{{c.email}}</a></span>
+                    <br/>
+                    </span>
+                    <span>
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    &nbsp;<span class="text-muted"><a href>{{c.company.name}}</a></span>
+                    <br/>
+                    </span>
+                    <span>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    &nbsp;<span class="text-muted"><a href>{{c.phone}}</a></span>
+                    <br/>
+                    </span>
+                </a>
             </div>
         </div>
-        
     </div>
+</div>
+<!-- 
+<div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-3" ng-repeat="c in cards">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens" class="img-responsive img-rounded" />
+                <span class="name">{{c.name}}</span>
+                    <br/>
+                    <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                &nbsp;<span class="text-muted">{{c.address.city}}</span>
+                    <br/>
+                    </span>
+                    <span>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                &nbsp;<span class="text-muted"><a href>{{c.email}}</a></span>
+                    <br/>
+                    <span>
+                            <span>
+                                <i class="fa fa-building" aria-hidden="true"></i>
+                                &nbsp;<span class="text-muted"><a href>{{c.company.name}}</a></span>
+                    <br/>
+                    <span>
+                                <span>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                &nbsp;<span class="text-muted"><a href>{{c.phone}}</a></span>
+                    <br/>
+                    <span>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>
+
+
+                
+
+            
+        </div>
+        
+    </div> -->
 </div>

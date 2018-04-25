@@ -1,13 +1,22 @@
-app.controller('landingCtrl', ['$scope', function($scope) {
+app.controller('landingCtrl', ['$scope','httpService','$aside',function($scope,httpService,$aside) {
 
+	httpService.contacts(function(resp)
+	{
+		$scope.cards = resp.data;
 
-    $scope.cards = [
-        { text: 'All Info As Cards' },
-        { text: 'All Info As Cards1' },
-        { text: 'All Info As Cards2' },
-        { text: 'All Info 2As Cards' },
-        { text: 'All I22nfo As Cards' },
-        { text: 'All Info As Cards' },
-        { text: 'All Info As Car3ds' }
-    ];
+	},function(err)
+	{
+		error("Error Fetching Contacts");
+		error(err);
+	});
+
+    $scope.showDetails = function()
+    {
+    	var asideInstance = $aside.open({
+            templateUrl: 'components/landing/contact-detail.html',
+            placement: 'left',
+            size: 'lg'
+        });
+        
+    }
 }]);

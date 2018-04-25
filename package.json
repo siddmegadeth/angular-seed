@@ -4,14 +4,8 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "angular": "^1.6.10",
-    "angular-aside": "^1.4.0",
     "body-parser": "^1.18.2",
-    "bootstrap3": "^3.3.5",
-    "cors": "^2.8.4",
     "express": "^4.16.2",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
     "request": "^2.85.0",
     "satellizer": "^0.15.5"
   },

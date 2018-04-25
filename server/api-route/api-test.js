@@ -35,9 +35,9 @@
     app.get("/api/contacts", function(req, resp) {
         request.get({ url: 'https://jsonplaceholder.typicode.com/users' }, function(err, response, data) {
             if (err)
-                resp.send(404)
+                resp.send(404);
             else
-                resp.send(JSON.stringify(response));
+                resp.send(JSON.parse(data));
         });
     });
 

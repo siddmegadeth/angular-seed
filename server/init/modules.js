@@ -4,7 +4,6 @@
     app = module.exports = express();
     request = module.exports = require('request');
     bodyParser = module.exports = require('body-parser');
-    cors = module.exports = require('cors');
     log = module.exports = console.log.bind(console);
     config = module.exports = {
         // App Settings
