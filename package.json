@@ -4,15 +4,23 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "angular": "^1.6.10",
+    "angular-aside": "^1.4.0",
     "body-parser": "^1.18.2",
+    "bootstrap3": "^3.3.5",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "request": "^2.85.0"
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "request": "^2.85.0",
+    "satellizer": "^0.15.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^22.4.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "test",
+    "start": "nodemon server.js"
   },
   "author": "siddharthc",
   "license": "ISC",
@@ -25,6 +33,3 @@
   },
   "homepage": "https://github.com/siddmegadeth/angular-seed#readme"
 }
-
-
-git remote add origin https://github.com/siddmegadeth/angular-seed.git
