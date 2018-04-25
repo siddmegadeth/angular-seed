@@ -7,15 +7,20 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-3 col-md-6 col-lg-3" ng-repeat="c in cards | filter:userSearch" style="margin-bottom:3%;">
+        <div class="col-sm-3 col-md-6 col-lg-3" ng-repeat="c in cards | orderBy : 'name'| filter:userSearch" style="margin-bottom:3%;">
             <div class="card " style="padding-left: 8%;padding-bottom: 7%;padding-top:4%;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);text-decoration:none;">
                 <a href ng-click="showDetails(c)">
                     <p>
                         <img src="assets/img_avatar.png" alt="Avatar" class="img-circle image-box" style="width:50%">
                     </p>
                     <span>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    &nbsp;<span class="text-primary">{{c.name}}</span>
+                    <br/>
+                    </span>
+                    <span>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    &nbsp;<span class="text-primary">{{c.address.city}}</span>
+                    &nbsp;<span class="text-secondary">{{c.address.city}}</span>
                     <br/>
                     </span>
                     <span>

@@ -4,7 +4,8 @@
         "ngAnimate",
         "ui.bootstrap",
         "ngAside",
-        "satellizer"
+        "satellizer",
+        "ngMap"
     ];
 
     var win = new winDevice("myApp", DI); //Bootstrap Cordova Or Browser Based App .no ng-app Required
