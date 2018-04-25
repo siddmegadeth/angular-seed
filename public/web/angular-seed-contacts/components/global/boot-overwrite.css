@@ -1,23 +1,20 @@
-nav.navbar.navbar-default
-{
-	margin-bottom: 0px !important;
-	background: red;
+nav.navbar.navbar-default {
+    margin-bottom: 0px !important;
+    background: red;
 }
 
-.add-margin-top
-{
-	margin-top: 2% !important;
-	margin-bottom: 2% !important;
+.add-margin-top {
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
 }
 
-a
-{
-	text-decoration: none !important;
+a {
+    text-decoration: none !important;
 }
 
-a:hover
-{
-	text-decoration: none !important;
+a:hover {
+    text-decoration: none !important;
 }
+
 
 /*Overwrrite Bootstrap Collpase*/

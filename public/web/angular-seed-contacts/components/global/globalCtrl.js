@@ -30,8 +30,7 @@ app.controller('globalCtrl', ['$scope', '$rootScope', '$location', '$uibModal', 
                 });
         };
 
-        $rootScope.logout = function() {
-        }
+        $rootScope.logout = function() {}
 
 
         $scope.about = [

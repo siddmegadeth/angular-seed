@@ -1,14 +1,10 @@
-.card-img-top
-{
-    width:100% !important;
+.card-img-top {
+    width: 100% !important;
     display: block;
 }
 
-.cards-box 
-{
-	box-shadow: 1px 1px 1px;
+.cards-box {
+    box-shadow: 1px 1px 1px;
     margin-left: 1px;
     text-align: center;
-
 }
-

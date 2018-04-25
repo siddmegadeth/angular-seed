@@ -20,7 +20,7 @@
     <link href='plugins/global/boot-cards.css' rel='stylesheet' type='text/css'>
     <link href='plugins/navbar/navbar-header.css' rel='stylesheet' type='text/css'>
     <link href='plugins/login/login.css' rel='stylesheet' type='text/css'>
-    <link hre="plugins/angular-aside-master/dist/css/angular-aside.min.css" rel="stylesheet" type="text/css" >
+    <link hre="plugins/angular-aside-master/dist/css/angular-aside.min.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap Overwrite CSS (Custom)-->
     <link href='plugins/global/boot-overwrite.css' rel='stylesheet' type='text/css'>
 </head>
@@ -29,8 +29,7 @@
     <route-loader value="isRouteLoading"></route-loader>
     <div class="visible-lg visible-md hidden-xs" ng-include="'components/navbar/navbar-header.html'" ng-if="showNav"></div>
     <div class="hidden-lg hidden-md visible-xs" ng-include="'components/navbar/navbar-header-mobile.html'" ng-if="showNav"></div>
-
-        <div ng-view class="section"></div>
+    <div ng-view class="section"></div>
 </body>
 <!-- All Plugins for Framework7 and AngularJS -->
 <script type="text/javascript" src="plugins/angular-1.5.9/angular.min.js"></script>
@@ -42,7 +41,7 @@
 <!-- Social Login -->
 <!-- <script src="plugins/social-login.js"></script>
  -->
- <script src="plugins/satellizer.js"></script>
+<script src="plugins/satellizer.js"></script>
 <!-- Below App Level Controllers and Init Files -->
 <script type="text/javascript" src="init.js"></script>
 <script type="text/javascript" src="components/global/globalCtrl.js"></script>
@@ -50,4 +49,5 @@
 <script type="text/javascript" src="components/landing/landingCtrl.js"></script>
 <script type="text/javascript" src="components/navbar/navBarCtrl.js"></script>
 <script type="text/javascript" src="components/login/loginCtrl.js"></script>
+
 </html>

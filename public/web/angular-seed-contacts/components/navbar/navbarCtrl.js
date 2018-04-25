@@ -9,7 +9,7 @@ app.controller('navBarCtrl', ['$scope', '$uibModal', '$aside', function($scope, 
     }
 
     $scope.selectSideMenuSide = function() {
-        var asideInstance =  $aside.open({
+        var asideInstance = $aside.open({
             templateUrl: 'components/navbar/side-menu.html',
             placement: 'left',
             size: 'lg'

@@ -24,7 +24,7 @@
             });
 
             $authProvider.withCredentials = true;
-       
+
 
 
             // Google
@@ -55,7 +55,7 @@
                 })
                 .when('/login', {
                     templateUrl: 'components/login/login.html',
-                    controller : 'loginCtrl',
+                    controller: 'loginCtrl',
                     showNav: true
 
                 })
